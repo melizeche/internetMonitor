@@ -1,6 +1,7 @@
 Something for monitor internet connection
+I made this because I'm tired of being f***ed by my ISP, I'm running this in a Raspberry Pi
 
-<H1>**REQUIREMENTS**</H1>
+<h2>**REQUIREMENTS**</h2>
 - 	Python 2.6+
 - 	APScheduler	(pip install apscheduler)
 
