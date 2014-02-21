@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Grafico de disponibilidad</title>
+		<script src="Chart.js"></script>
+		<script src="data.js"></script>
+	</head>
+	<body>
+		<center>
+		<canvas id="canvas" width="400" height="400"></canvas>
+		</center>
+
+		<script >
+
+			var pieData = [
+				{
+					value: up,
+					color:"gray",
+					label:'Con Internet',
+					labelColor: 'black',
+        			labelFontSize: '26'
+				},
+				{
+					value : down,
+					color : "red",
+					label:'Sin Internet',
+					labelColor: 'black',
+        			labelFontSize: '26'
+				}
+
+			];
+
+	var myPie = new Chart(document.getElementById("canvas").getContext("2d")).Pie(pieData, {
+        labelAlign: 'center'
+    });
+    document.write("<br>Datos desde el: <b>" + first + "</b> hasta el: <b>" + last + "<br>" + down + "</b> minutos sin Internet" );
+		</script>
+	</body>
+<html>
